@@ -1,0 +1,84 @@
+.carousel-caption {
+        color: black;
+}
+
+#footer {
+    position: fixed; /* Фиксированное положение */
+    left: 0; bottom: 0; /* Левый нижний угол */
+    padding: 10px; /* Поля вокруг текста */
+    background-color: red; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    width: 100%; /* Ширина слоя */
+}
+
+
+
+.body {
+    font: 10pt Arial, Helvetica, sans-serif; /* Шрифт на веб-странице */
+    background: #0d6efd; /* Цвет фона */
+    margin: 0; /* Убираем отступы *
+ }
+
+#container {
+    width: auto; /* Ширина макета */
+    margin: 0 auto; /* Выравниваем по центру */
+}
+
+#content {
+    margin-right: 260px; /* Отступ справа */
+    padding: 10px; /* Поля вокруг текста */
+    background: #fff; /* Цвет фона левой колонки */
+}
+
+#content p {
+    margin-top: 0.3em /* Отступ сверху */
+}
+
+#sidebar {
+    float: right; /* Обтекание по левому краю */
+    width: 240px; /* Ширина правой колонки */
+    padding: 10px; /* Отступы вокруг текста */
+    background: cyan; /* Цвет фона */
+    margin: 10px;
+    border: 2px solid #0d6efd;
+}
+
+#sidebar a {
+    color: #752641; /* Цвет ссылок */
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+}
+
+.table{
+    border: 2px solid #0d6efd;
+    color: #fff; /* Цвет текста */
+}
+
+th{
+    border: 2px solid #0d6efd;
+}
+
+.capital {
+   background: cyan;
+}
+
+td {
+    color:black;
+    border: 2px solid #0d6efd;
+}
+
+.conteiner {
+    width: auto;
+    height: auto;
+    min-width: 100px;
+    min-height: 160px;
+    max-width: 600px;
+    max-height: 820px;
+}
+
+.sh {
+    margin-left: 5px;
+}

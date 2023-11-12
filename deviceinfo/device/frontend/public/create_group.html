@@ -1,0 +1,43 @@
+{% extends "public/base.html" %}
+{% block content_title %}
+{% load static from staticfiles %}
+	<title>Создать группу</title>
+	<meta charset="utf-8">
+	<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
+{% endblock %}
+{% block content %}
+
+	<button type="button" class="btn btn-primary btn-my" name="createGroup" onclick="request_create_group()">Создать группу</button>
+    <br><br>
+    <div class="text-field field-text">
+	  <div class="text-field__icon text-field__icon_create">
+		<input id="name_group" class="text-field__input" type="text" placeholder="Имя группы" value="">
+	  </div>
+	</div>
+	<br><br>
+	<form>{% csrf_token %}</form>
+	<div class="parent">
+ 	
+	    <div class="origin">  
+		  
+	    </div>
+
+		<div class="dropzone" ondragover="onDragOver(event);" ondrop="onDrop(event);">
+		   <div class="white-class">Создание группы датчиков</div>
+		   <br><br>
+		</div>
+
+	</div>
+
+{% endblock %}
+{% block script %}
+
+    <script type="text/javascript" src="/frontend/js/script.js"></script>
+	<script>
+		var shet = 5
+		for (var i=0; i < shet; i++) {
+		  createPacketOnPanel(String(i), i)
+		}
+
+	</script>
+{% endblock %}

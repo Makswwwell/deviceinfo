@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% load static from staticfiles %}
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link href="{% static 'css/index.css' %}" rel="stylesheet" type="text/css" />
+    {% block content_title %}
+
+    {% endblock %}
+</head>
+<body>
+
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li><a href="{% url 'Home' %}"><img  class="icon" src="{% static 'images/chip.png' %}">
+                            <strong class="sh">Список устройств</strong></a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="{% url 'Groups' %}"><img  class="icon" src="{% static 'images/servers.png' %}">
+                            <strong class="sh">Список групп</strong></a>
+                        </li>
+
+                        <li><a href="{% url 'Create' %}"><img  class="icon" src="{% static 'images/document.png' %}">
+                            <strong class="sh">Создать группу</strong></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+
+            {% block content %}
+
+            {% endblock %}
+
+            <br>
+            <div id="footer">&copy; Info devices</div>
+
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    {% block script %} {% endblock%}
+
+</body>
+</html>
